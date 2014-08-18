@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
 
     // a change in comment
+    // another change comment
 
 }
 
