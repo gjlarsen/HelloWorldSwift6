@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBOutlet var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,13 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // a change in comment
-    // another change comment
-    // another change again
-    // here we go with another change
-    // here is one more change
-    // THis is kenneth
-    // This is a test
+    @IBAction func helloWorldAction(nameTextField: UITextField) {
+        nameLabel.text = "Hi \(nameTextField.text)"
+    }
 
 }
 
